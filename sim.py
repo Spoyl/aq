@@ -44,9 +44,9 @@ class post:
         return 
 
 
-def modified_sigmoid(x):
+def sigmoid(x):
     from numpy import exp
-    return 2 / (1 + exp(-x)) - 1
+    return 1/(1 + exp(-x))
 
 x = user(3)
 print(str(x))
